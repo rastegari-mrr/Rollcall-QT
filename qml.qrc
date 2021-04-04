@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Pages/MainPage.qml</file>
+        <file>Pages/date-convert.js</file>
+        <file>Pages/number-format.js</file>
+        <file>Icons/card.svg</file>
+        <file>Icons/person.svg</file>
+        <file>Pages/Settings.qml</file>
+        <file>Pages/CardLogger.qml</file>
+        <file>users.js</file>
+        <file>Pages/ProgressFileUpload.qml</file>
+        <file>Pages/UserLog.qml</file>
+        <file>Pages/Users.qml</file>
+        <file>Icons/back.svg</file>
+        <file>Pages/Message.qml</file>
+    </qresource>
+</RCC>

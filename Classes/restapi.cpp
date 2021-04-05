@@ -1,5 +1,6 @@
 #include "restapi.h"
 #include <QNetworkRequest>
+#include <QSslConfiguration>
 
 RestAPI::RestAPI(QObject *parent) : QObject(parent)
 {    
@@ -28,6 +29,9 @@ void RestAPI::startGet(const QString &function, const QString &queryString)
             myurl.setPath("/home/" + function);
         myurl.setQuery(queryString);
         request.setUrl(myurl);
+        QSslConfiguration conf = request.sslConfiguration();
+        conf.setPeerVerifyMode(QSslSocket::VerifyNone);
+        request.setSslConfiguration(conf);
         m_reply = restclient->get(request);
         m_timer->start();
         qDebug() << "get request sent";

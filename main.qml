@@ -6,7 +6,7 @@ import Omega 1.0
 ApplicationWindow {
     id: window
     visible: true
-    width: 320
+    width: 800
     height: 480
     Material.accent: Material.Blue
 
@@ -16,12 +16,12 @@ ApplicationWindow {
         testRestApi();
     }
 
-//    StackView {
-//        id: stackView
-//        anchors.fill: parent
-//        font.family: 'Segoe UI'
-//        initialItem: 'Pages/MainPage.qml'
-//    }    
+    //    StackView {
+    //        id: stackView
+    //        anchors.fill: parent
+    //        font.family: 'Segoe UI'
+    //        initialItem: 'Pages/MainPage.qml'
+    //    }
     function testRestApi() {
         lblIP.text = 'IP : ' + userOperate.getIP()
         restApi.startGet('', '')
@@ -71,49 +71,54 @@ ApplicationWindow {
     UserOperate {
         id: userOperate
     }
-
-    Rectangle {
-        id: loading
-        color: '#00000000'
-        clip: true
-        width: 320
-        height: 480
+    Page
+    {
+        anchors.centerIn: parent
+        rotation: 90
+        width: window.height
+        height: window.width
         Rectangle {
+            id: loading
+            color: '#00000000'
+            clip: true
             anchors.fill: parent
-            Column {
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.verticalCenter: parent.verticalCenter
-                BusyIndicator {
-                    width: 400
-                    anchors.horizontalCenter: parent.horizontalCenter
-                }
-                Text {
-                    text: 'Loading'
-                    font.family: stackView.font.family
-                    font.pixelSize: 30
-                    anchors.horizontalCenter: parent.horizontalCenter
+            Rectangle {
+                anchors.fill: parent
+                Column {
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.verticalCenter: parent.verticalCenter
+                    BusyIndicator {
+                        width: 400
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    Text {
+                        text: 'Loading'
+                        font.family: stackView.font.family
+                        font.pixelSize: 30
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
                 }
             }
-        }
-        Text {
-            id: lblIP
-            anchors.bottom: lblLog.top
-            anchors.horizontalCenter: parent.horizontalCenter
-        }
-        Text {
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            id: lblLog
-            text: '....'
+            Text {
+                id: lblIP
+                anchors.bottom: lblLog.top
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+            Text {
+                anchors.bottom: parent.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+                id: lblLog
+                text: '....'
+            }
+
         }
 
-    }
-
-    StackView {
-        id: stackView
-        anchors.fill: parent
-        font.family: 'Segoe UI'
+        StackView {
+            id: stackView
+            anchors.fill: parent
+            font.family: 'Segoe UI'
+        }
     }
 
     InputPanel {

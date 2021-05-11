@@ -45,22 +45,22 @@ Page {
     Column {
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.top: parent.top
+        anchors.top: parent.top        
+        anchors.topMargin: 70
         Text {
             id: lblTime
             color: lblDate.color
             anchors.horizontalCenter: parent.horizontalCenter
             text: FormatNumbers.convertToPersian(Convert.formatPersianDate(props.date, 'HH:mm:ss'))
-            font.pixelSize: 80
-            font.family: stackView.font.family
-            anchors.topMargin: 100
+            font.pixelSize: 90
+            font.family: stackView.font.family            
             font.bold: true
         }
         Text {
             color: lblDate.color
             text: FormatNumbers.convertToPersian(Convert.formatPersianDate(props.date, 'dddd'))
             anchors.horizontalCenter: parent.horizontalCenter
-            font.pixelSize: 40
+            font.pixelSize: 50
             font.family: stackView.font.family
         }
         Text {
@@ -68,7 +68,7 @@ Page {
             color: "#191fa6"
             text: FormatNumbers.convertToPersian(Convert.formatPersianDate(props.date, 'dd MMMM yyyy'))
             anchors.horizontalCenter: parent.horizontalCenter
-            font.pixelSize: 40
+            font.pixelSize: 50
             font.family: stackView.font.family
         }
     }
@@ -77,8 +77,11 @@ Page {
         id: imgCard
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottomMargin: 50
+        anchors.bottomMargin: 100
         source: "/Icons/card.svg"
+        width: 250
+        height: 250
+        fillMode: Image.PreserveAspectFit
         visible: true
         MouseArea {
             anchors.fill: parent

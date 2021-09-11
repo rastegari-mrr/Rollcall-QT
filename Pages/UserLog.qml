@@ -49,7 +49,7 @@ Page {
         spacing: 5
         Image {
             source: props.fileName
-            height: 200
+            height: 300
             fillMode: Image.PreserveAspectFit
             anchors.horizontalCenter: parent.horizontalCenter
         }
@@ -58,7 +58,7 @@ Page {
             color: "#191fa6"
             text: root.user !== undefined ? root.user.name : ''
             anchors.horizontalCenter: parent.horizontalCenter
-            font.pixelSize: 30
+            font.pixelSize: 35
             font.bold: true
             font.family: stackView.font.family
         }
@@ -69,7 +69,7 @@ Page {
             color: "#191fa6"
             text: root.isAcceptedBefore ? 'شما قبلا تایید شده اید' : 'شما تایید شدید'
             anchors.horizontalCenter: parent.horizontalCenter
-            font.pixelSize: 30
+            font.pixelSize: 35
             font.bold: true
             font.family: stackView.font.family
         }

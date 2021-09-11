@@ -4,6 +4,7 @@
 
 #include <Classes/filedownloader.h>
 #include <Classes/restapi.h>
+#include <Classes/chequenotify.h>
 #include <Classes/useroperate.h>
 #include <Classes/imageprovider.h>
 #include <QUrlQuery>
@@ -25,6 +26,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<RestAPI>("Omega", 1, 0, "RestAPI");
     qmlRegisterType<UserOperate>("Omega", 1, 0, "UserOperate");
+    qmlRegisterType<ChequeNotify>("Omega", 1, 0, "ChequeNotify");
 
     QQmlApplicationEngine engine;
 

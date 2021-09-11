@@ -22,7 +22,8 @@ SOURCES += \
     Classes/restapi.cpp \
     Classes/runlinuxcommands.cpp \
     Classes/useroperate.cpp \
-    Classes/imageprovider.cpp
+    Classes/imageprovider.cpp \
+    Classes/chequenotify.cpp
 
 RESOURCES += qml.qrc
 
@@ -51,4 +52,5 @@ HEADERS += \
     Classes/restapi.h \
     Classes/runlinuxcommands.h \
     Classes/useroperate.h \
-    Classes/imageprovider.h
+    Classes/imageprovider.h \
+    Classes/chequenotify.h

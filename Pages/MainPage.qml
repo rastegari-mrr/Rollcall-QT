@@ -29,7 +29,8 @@ Page {
     }
 
     StackView.onActivated: {
-        props.isLoggerActive = true        
+        props.isLoggerActive = true
+        chequeNotify.startGet();
     }
 
     StackView.onDeactivated: {
@@ -137,7 +138,12 @@ Page {
         repeat: true
         onTriggered: {
             Users.addCardRecieveds();
+            chequeNotify.startGet();
         }
+    }
+
+    ChequeNotify {
+        id: chequeNotify
     }
 
     RestAPI {

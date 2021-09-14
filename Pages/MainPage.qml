@@ -18,6 +18,14 @@ Page {
         property bool gotoUsers: false
     }
 
+    function sendChequeNotify() {
+        var hour = props.date.getHours()
+        if(hour > 8) {
+            chequeNotify.startGet();
+            console.log('Cheque notify is sent')
+        }
+    }
+
     Component.onCompleted: {
         props.restApiType = restFunctions.getAllUsers
         console.log('main page entered')
@@ -26,11 +34,11 @@ Page {
         var ret = userOperate.setDateTime(Users.dateStrToDate(root.dateStr))
         console.log('main page entered - ' + ret)
         props.date = new Date()
+        sendChequeNotify()
     }
 
     StackView.onActivated: {
-        props.isLoggerActive = true
-        chequeNotify.startGet();
+        props.isLoggerActive = true        
     }
 
     StackView.onDeactivated: {
@@ -137,8 +145,8 @@ Page {
         interval: 120000
         repeat: true
         onTriggered: {
-            Users.addCardRecieveds();
-            chequeNotify.startGet();
+            Users.addCardRecieveds();            
+            sendChequeNotify()
         }
     }
 

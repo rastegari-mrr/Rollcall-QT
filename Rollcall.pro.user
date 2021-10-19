@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.8.1, 2021-09-11T18:34:23. -->
+<!-- Written by QtCreator 4.8.1, 2021-10-19T17:06:48. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -269,36 +269,36 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedFiles">
-       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
-       <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
-       <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
        <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
+       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
+       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
        <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
        <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
        <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
+       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
+       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
+       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
+       <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
        <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
        <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
-       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
-       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
-       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
-       <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
+       <value type="QString">/home/omega/Rollcall/990111/build-Rollcall-Raspberry_PI-Debug/Rollcall</value>
        <value type="QString">/home/omega/Projects/Rollcall/990111/build-Rollcall-Raspberry_PI-Release/Rollcall</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.1.13</value>
+       <value type="QString">192.168.1.7</value>
+       <value type="QString">192.168.10.5</value>
+       <value type="QString">192.168.1.3</value>
+       <value type="QString">192.168.1.3</value>
+       <value type="QString">192.168.1.7</value>
+       <value type="QString">192.168.10.5</value>
+       <value type="QString">192.168.1.3</value>
        <value type="QString">192.168.10.10</value>
        <value type="QString">192.168.1.6</value>
        <value type="QString">192.168.1.14</value>
-       <value type="QString">192.168.1.3</value>
-       <value type="QString">192.168.1.3</value>
-       <value type="QString">192.168.1.12</value>
-       <value type="QString">192.168.1.7</value>
-       <value type="QString">192.168.1.3</value>
-       <value type="QString">192.168.10.5</value>
-       <value type="QString">192.168.1.13</value>
-       <value type="QString">192.168.1.7</value>
-       <value type="QString">192.168.1.3</value>
-       <value type="QString">192.168.10.5</value>
        <value type="QString">192.168.10.175</value>
+       <value type="QString">192.168.1.12</value>
+       <value type="QString">192.168.1.3</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/home/pi</value>
@@ -333,20 +333,20 @@
        <value type="QString">/home/omega/raspi/sysroot</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2020-12-03T01:28:16.815</value>
+       <value type="QDateTime">2021-04-05T11:29:53.252</value>
+       <value type="QDateTime">2021-10-19T17:05:46.185</value>
+       <value type="QDateTime">2020-04-12T12:53:02.714</value>
+       <value type="QDateTime">2020-04-12T12:49:50.825</value>
+       <value type="QDateTime">2021-04-05T11:31:49.953</value>
+       <value type="QDateTime">2021-10-19T17:02:01.145</value>
+       <value type="QDateTime">2020-12-03T02:12:10.630</value>
        <value type="QDateTime">2021-07-07T15:41:50.370</value>
        <value type="QDateTime">2020-04-11T11:40:11.314</value>
        <value type="QDateTime">2020-04-06T18:47:23.992</value>
-       <value type="QDateTime">2020-12-03T02:12:10.630</value>
-       <value type="QDateTime">2020-04-12T12:53:02.714</value>
-       <value type="QDateTime">2020-03-30T14:41:19.878</value>
-       <value type="QDateTime">2021-04-05T11:31:49.953</value>
-       <value type="QDateTime">2020-04-12T12:49:50.825</value>
-       <value type="QDateTime">2021-09-11T18:32:26.411</value>
-       <value type="QDateTime">2020-12-03T01:28:16.815</value>
-       <value type="QDateTime">2021-04-05T11:29:53.252</value>
-       <value type="QDateTime">2020-04-13T09:31:25.170</value>
-       <value type="QDateTime">2021-09-11T18:31:29.627</value>
        <value type="QDateTime">2021-05-11T20:33:13.954</value>
+       <value type="QDateTime">2020-03-30T14:41:19.878</value>
+       <value type="QDateTime">2020-04-13T09:31:25.170</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.IgnoreMissingFiles">false</value>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">true</value>
@@ -417,7 +417,7 @@
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>

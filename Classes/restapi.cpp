@@ -10,7 +10,7 @@ RestAPI::RestAPI(QObject *parent) : QObject(parent)
     m_timer->setSingleShot(true);
 
     connect(m_timer, &QTimer::timeout, this , [=]() {
-        qDebug() << "timeout";
+        //qDebug() << "timeout";
         m_reply->deleteLater();
         emit timeout();
     });
@@ -34,7 +34,7 @@ void RestAPI::startGet(const QString &function, const QString &queryString)
         request.setSslConfiguration(conf);
         m_reply = restclient->get(request);
         m_timer->start();
-        qDebug() << "get request sent";
+        //qDebug() << "get request sent";
         connect(m_reply, &QNetworkReply::finished, this, [=] {
             try {
                 m_timer->stop();

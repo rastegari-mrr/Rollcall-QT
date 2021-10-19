@@ -23,7 +23,8 @@ SOURCES += \
     Classes/runlinuxcommands.cpp \
     Classes/useroperate.cpp \
     Classes/imageprovider.cpp \
-    Classes/chequenotify.cpp
+    Classes/chequenotify.cpp \
+    Classes/readcart.cpp
 
 RESOURCES += qml.qrc
 
@@ -53,4 +54,5 @@ HEADERS += \
     Classes/runlinuxcommands.h \
     Classes/useroperate.h \
     Classes/imageprovider.h \
-    Classes/chequenotify.h
+    Classes/chequenotify.h \
+    Classes/readcart.h
